@@ -3,11 +3,9 @@ import matplotlib
 import matplotlib.image as plt_img
 import numpy as np
 import tensorflow as tf
-from utils import CustomAdam
 ssl._create_default_https_context = ssl._create_unverified_context
 
 print(tf.config.list_physical_devices())
-
 
 # preprocessing and loss functions
 
@@ -126,7 +124,7 @@ def main():
 
 
     # training loop
-    optimizer = CustomAdam(learning_rate=0.02, beta1=0.99, epsilon=1e-1)  # use tf.keras.optimizers.Adam if have NVIDIA GPU
+    optimizer = tf.keras.optimizers.Adam(learning_rate=0.02, beta_1=0.99, epsilon=1e-1)
 
     # initialize with trainable noise
     # noise_img = tf.Variable(initial_value=tf.random.normal(shape=content_img.shape,mean = np.mean(content_img),stddev = np.std(content_img)))

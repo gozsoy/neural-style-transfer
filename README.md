@@ -31,8 +31,8 @@ Fine tuning of optimizer hyperparameters, alpha/beta ratio, and variational loss
 </p>
 
 <p align="center">
-<img src="./images/my_creations/tubingen_kandinsky.jpg" height="192px">
 <img src="./images/my_creations/tubingen_kandinsky2.jpg" height="192px">
+<img src="./images/my_creations/tubingen_kandinsky.jpg" height="192px">
 </p>
 
 <p align="center">
