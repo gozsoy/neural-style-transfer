@@ -1,5 +1,6 @@
 import ssl
 import matplotlib
+import matplotlib.image as plt_img
 import numpy as np
 import tensorflow as tf
 from utils import CustomAdam
@@ -161,7 +162,7 @@ def main():
         
         if e % 100 == 0:
             print(f'epoch: {e}, content_loss: {loss_c.numpy()}, style_loss: {loss_s.numpy()}, variation_loss: {loss_v.numpy()}')
-        matplotlib.image.imsave('images/created.jpg', np.array(noise_img[0]*255., dtype=np.uint8))
+        plt_img.imsave('images/created.jpg', np.array(noise_img[0]*255., dtype=np.uint8))
 
 
 if __name__ == '__main__':
